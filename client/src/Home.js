@@ -1,6 +1,9 @@
 import React from 'react';
-import img1 from "./img/iphone6.png"
-import img2 from "./img/iphone6s.png"
+import Item from './Item';
+import iphone6 from "./img/iphone6.png"
+import iphone6s from "./img/iphone6s.png"
+import ipadmini1 from "./img/ipadmini1.png"
+import ipadair1 from "./img/ipadair1.png"
 
 const Home = () => {
     return (
@@ -8,7 +11,6 @@ const Home = () => {
             <header>
                 <div className="logo">VNDR.mx</div>
                 <nav>
-                    <a href="#vndr">VNDR</a>
                     <a href="#products">Productos</a>
                     <a href="#contact">Contactar</a>
                 </nav>
@@ -20,34 +22,11 @@ const Home = () => {
                 <section className="py-5">
                     <div className="container px-4 px-lg-5 mt-5">
                         <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                            <div className="col mb-5">
-                                <div className="card h-100">
-                                    <img className="item-image card-img-top border-bottom py-2" src={img1} alt="..." />
-                                    <div className="card-body p-4">
-                                        <div className="text-center">
-                                            <h5 className="fw-bolder">IPHONE 6 16GB</h5>
-                                            $1200
-                                        </div>
-                                    </div>
-                                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col mb-5">
-                                <div className="card h-100">
-                                    <img className="item-image card-img-top border-bottom py-2" src={img2} alt="..." />
-                                    <div className="card-body p-4">
-                                        <div className="text-center">
-                                            <h5 className="fw-bolder">IPHONE 6S 16GB</h5>
-                                            $1500
-                                        </div>
-                                    </div>
-                                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Item image={iphone6} title="IPHONE 6 16GB" price="$1200" site={"https://www.facebook.com/marketplace/item/668803871865438/?ref=marketplace_profile&referral_code=undefined"}/>
+                            <Item image={iphone6s} title="IPHONE 6S 16GB" price="$1400" site={"https://www.facebook.com/marketplace/item/1492075248226298/?ref=marketplace_profile&referral_code=undefined"}/>
+                            <Item image={ipadmini1} title="IPAD MINI 1 32GB" price="$1300" site={"https://www.facebook.com/marketplace/item/3792942620933027/?ref=marketplace_profile&referral_code=undefined"}/>
+                            <Item image={ipadmini1} title="IPAD MINI 1 64GB" price="$1500" site={"https://www.facebook.com/marketplace/item/331842332734702/?ref=marketplace_profile&referral_code=undefined"}/>
+                            <Item image={ipadair1} title="IPAD AIR 1 16GB" price="$1700" site={"https://www.facebook.com/marketplace/item/1462166861227700/?ref=marketplace_profile&referral_code=undefined"}/>
                         </div>
                     </div>
                 </section>

@@ -54,10 +54,33 @@ nav a:hover {
     color: white;
 }
 
+.item-card {
+    border: 1px solid var(--blue);
+}
+
 .item-image {
     height: 200px;
     object-fit: scale-down;
+    border-bottom: 1px solid var(--blue);
 }
+
+.item-desc {
+    color: var(--blue);
+}
+
+.item-btn {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.item-btn:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
 
 @media (max-width: 500px){
     .intro h1 {
