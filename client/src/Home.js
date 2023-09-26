@@ -33,6 +33,13 @@ const Home = () => {
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="js/scripts.js"></script>
             </section>
+            <section className="contact" id="contact">
+                <h1>Contáctanos</h1>
+                <div>
+                    <a href="mailto:vndr.mexico@gmail.com" target="_blank">Correo</a>
+                    <a href="https://www.instagram.com/vndr.mx" target="_blank">Instagram</a>
+                </div>
+            </section>
         </>
     );
 };

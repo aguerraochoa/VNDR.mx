@@ -81,6 +81,41 @@ nav a:hover {
     background-color: var(--blue);
 }
 
+.contact {
+    height: 20vh;
+    background-color: var(--blue);
+    display: flex;
+    padding-top: 4vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact h1 {
+    color: white;
+}
+
+.contact div {
+    display: flex;
+    gap: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    color: var(--blue);
+    background-color: white;
+    border: 1px solid var(--blue);
+}
+
+
+
 
 @media (max-width: 500px){
     .intro h1 {
